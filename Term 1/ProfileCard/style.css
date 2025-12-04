@@ -1,0 +1,46 @@
+*{
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    z-index: -1;
+    background-color: black;
+
+    position: absolute;
+    margin:auto auto;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+#contentBox{
+    border-radius: 50px;
+    display: flex;
+    box-shadow: 0 0 10px 10px grey;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:600px;height: 600px;
+    background-color: white;
+}
+#profileImg{
+    border-radius: 100px;
+    height:200px;
+    width: 200px;
+
+}
+button{
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+p{
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+}

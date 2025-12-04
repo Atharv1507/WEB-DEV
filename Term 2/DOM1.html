@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF - 8" />
+    <meta
+      name="viewport"
+      content="width = device - width, initial - scale = 1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body id="body-1">
+    <button id="btn-1">Say Hello</button>
+    
+
+    <script>
+      const body=document.querySelector(body)
+      const btn=document.getElementById('btn-1');
+      btn.addEventListener('click',()=>{
+        const newel=document.createElement('h4')
+        newel.innerText='innerBtn'
+        body.appendChild(newel)
+        console.log(newel)
+      })
+    </script>
+  </body>
+</html>
