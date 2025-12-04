@@ -1,3 +1,8 @@
+//audio variables 
+const audio=new AudioContext();
+const audioelement=document.querySelector('audio');
+const track=audio.createMediaElementSource(audioelement);
+track.connect(audio.destination);
 //timer variables
 let time;
 const timer = document.querySelector(".time");
@@ -36,6 +41,7 @@ function startCountDown() {
               body: text,
               icon: img,
             });
+            audioelement.play()
             setTimeout(() => {
               notification.close();
             }, 5000);
